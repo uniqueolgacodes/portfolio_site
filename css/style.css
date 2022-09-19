@@ -496,6 +496,7 @@ img{
     max-width:100%;
     padding:20px;
     text-align: center;
+    /* margin-bottom: 40px; */
 }
 .portfolio .portfolio-filter button{
     text-transform: uppercase;
@@ -509,9 +510,61 @@ img{
     background-color: var(--white);
     margin-right:20px;
     color: var(--black-900);
+    transition:all 0.3s ease;
 }
+.portfolio .portfolio-filter button:hover, 
 .portfolio .portfolio-filter button.active{
     color:var(--black-900);
     background-color: var(--main-color);
     border:1px solid black;
+}
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+/*    background-color: var(--main-color); */
+padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .portfolio-item-inner{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+    cursor: pointer;
+    position: relative;
+
+}
+.portfolio .portfolio-item-inner .portfolio-img img{
+    width:100%;
+    display: block;
+}
+.portfolio .portfolio-item .portfolio-info{
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    padding:30px;
+}
+.portfolio .portfolio-item .portfolio-info h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+.portfolio .portfolio-item .portfolio-info .icon{
+    height: 40px;
+    width:40px;
+    background-color: var(--white);
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.portfolio .portfolio-item .portfolio-info .icon .fa{
+    line-height:40px;
 }
