@@ -265,7 +265,7 @@ img{
 
 .home-section .home-text h4 span::before{
     content: "Developer";
-    animation: animate infite 25s;
+    animation: animate infinite 25s;
     padding-left: 10px;
     font-size:27px;
     font-weight: 800;
