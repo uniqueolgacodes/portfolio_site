@@ -52,15 +52,31 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="home-text">
-                        <h4>Hello</h4>
-                        <h1>Unique Olga</h1>
+                        <h4>Hello, you found a:<span></span></h4>
+                        <h1 id="typing-text"></h1>
                         <span>Professional Freelancer Web Developer</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed aut dolores in harum necessitatibus numquam facilis et. Vero doloremque obcaecati sunt aspernatur ipsum veritatis labore perspiciatis mollitia ipsam quas.</p>
-                        <a href="#" class="btn btn-1">Purchase  Now</a>
+                        <p>As a dedicated web developer, I craft digital experiences that seamlessly blend creativity and functionality, turning visions into dynamic websites that captivate and engage users.</p>
+                        <a href="#" class="btn btn-1">Download CV</a>
                     </div>
+                    <script>
+                        const typingText = document.getElementById('typing-text');
+                        const text = 'Unique Olga';
+                        let index = 0;
+
+                        function type() {
+                            if (index < text.length) {
+                                typingText.innerHTML += text.charAt(index);
+                                index++;
+                                setTimeout(type, 100);
+                            }
+                        }
+
+                        type();
+
+                    </script>
                     <div class="home-image">
                         <div class="img-box">
-                            <img src="images/rTkJ7v-man-png-image.png" alt="" srcset="">
+                            <img src="images/olganew.png" alt="" srcset="">
                         </div>
                     </div>
                 </div>
@@ -78,7 +94,7 @@
                 <div class="row align-items-center">
                     <div class="about-image">
                         <div class="img-box">
-                            <img src="images/Smiling-Business-Man-Standing-PNG-Image.png" alt="" srcset="">
+                            <img src="images/olganew2.png" alt="" srcset="">
                             <div class="about-shape"></div>
                         </div>
                     </div>
@@ -92,18 +108,27 @@
                                 <li></li>
                             </ul>
                         </div><!-- === SECTION TITLE === -->
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolorem voluptatum reiciendis similique animi est, vitae dolorum aperiam sunt sit reprehenderit aliquid quia nihil temporibus cum sapiente cumque! Maxime, debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, maxime ea nulla consectetur pariatur recusandae? Soluta culpa reprehenderit dolore aspernatur mollitia nostrum tenetur. Vitae nisi dolore ut a officiis aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores minima odit nemo amet tempora fuga? Officia ipsum nobis itaque quae omnis placeat nihil saepe, temporibus beatae. Dolore est voluptatum ipsam!</p>
+                        <p>I am a front-end web developer with some years of experience. I have a strong passion for building beautiful and user-friendly websites and web applications. I am also a quick learner and I am always eager to take on new challenges.
+                            <br>
+                            <br>
+                            I have a proven track record of success. I have successfully delivered a variety of front-end web development projects for clients of all sizes. I have a deep understanding of HTML, CSS, and JavaScript, and I am also experienced with popular front-end frameworks such as React and Vue.js.
+                            <br>
+                            <br>
+                            I am a creative and innovative thinker. I am always looking for new and innovative ways to build and design websites and web applications. I am also passionate about user experience and accessibility.
+                            <br>
+                            <br>
+                            I am a team player and I am easy to work with. I am always willing to go the extra mile and I am always happy to help my teammates. I am also a good communicator and I am able to clearly explain complex technical concepts to non-technical audiences.</p>
                         <div class="about-skills">
                             <div class="skill-item">
                                 <div class="skill-header">
-                                    <h6 class="skill-title">LOADING</h6>
+                                    <h6 class="skill-title">CREATIVITY</h6>
                                     <div class="skill-percentage">
-                                        <p><span class="counter">60</span>%</p>
+                                        <p><span class="counter">100</span>%</p>
                                     </div>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="bar-inner">
-                                        <div class="bar progress-line LOADING60" data-progress="60%"></div>
+                                        <div class="bar progress-line LOADING60" data-progress="100%"></div>
                                     </div>
                                 </div>
                             </div> <!--Skill Item-->
@@ -180,11 +205,8 @@
                                 <i class="fas fa-mobile-alt"></i>
                             </div>
                             <h3>Responsive Design</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum, maiores incidunt?
-                                 Velit magnam distinctio vero, sapiente quia 
-                                 optio quam error numquam expedita 
-                                veniam totam sint ratione. Totam itaque soluta explicabo.
+                            <p>
+                                I can create responsive websites that look good and function well on all devices.
                             </p>
                         </div>
                     </div>
@@ -197,11 +219,7 @@
                                 <i class="fas fa-laptop-code"></i>
                             </div>
                             <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum, maiores incidunt?
-                                 Velit magnam distinctio vero, sapiente quia 
-                                 optio quam error numquam expedita 
-                                veniam totam sint ratione. Totam itaque soluta explicabo.
+                            <p>I can create user-friendly and visually appealing websites that meet the needs of my clients and their target audiences.
                             </p>
                         </div>
                     </div>
@@ -214,11 +232,8 @@
                                 <i class="fas fa-palette"></i>
                             </div>
                             <h3>Graphic Design</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum, maiores incidunt?
-                                 Velit magnam distinctio vero, sapiente quia 
-                                 optio quam error numquam expedita 
-                                veniam totam sint ratione. Totam itaque soluta explicabo.
+                            <p>
+                                I am capable of good graphic design because I have a strong understanding of the principles of design, such as color theory, typography, and layout, and I am able to use these principles to create visually appealing and effective designs.
                             </p>
                         </div>
                     </div>
@@ -231,11 +246,7 @@
                                 <i class="fas fa-code"></i>
                             </div>
                             <h3>Clean Code</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum, maiores incidunt?
-                                 Velit magnam distinctio vero, sapiente quia 
-                                 optio quam error numquam expedita 
-                                veniam totam sint ratione. Totam itaque soluta explicabo.
+                            <p>I excel in writing clean and modular code, ensuring maintainability and scalability through meticulous organization and adherence to best coding practices.
                             </p>
                         </div>
                     </div>
@@ -248,8 +259,7 @@
                                 <i class="fas fa-search"></i>
                             </div>
                             <h3>SEO Marketing</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum,  ratione. Totam itaque soluta explicabo.
+                            <p>I am proficient in SEO marketing, utilizing data-driven strategies and industry best practices to optimize online visibility and drive organic traffic.
                             </p>
                         </div>
                     </div>
@@ -262,11 +272,7 @@
                                 <i class="fas fa-bullhorn"></i>
                             </div>
                             <h3>Great Support</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur 
-                                adipisicing elit. Illum, maiores incidunt?
-                                 Velit magnam distinctio vero, sapiente quia 
-                                 optio quam error numquam expedita 
-                                veniam totam sint ratione. Totam itaque soluta explicabo.
+                            <p>I excel in providing exceptional customer support through attentive communication and swift problem-solving, ensuring every customer's needs are met with excellence.
                             </p>
                         </div>
                     </div>

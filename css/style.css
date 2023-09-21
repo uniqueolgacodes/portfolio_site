@@ -3,9 +3,9 @@
 @import url('./KaushanScript-Regular.ttf');
 /*=== GLOBAL CSS===*/
 :root{
-    --main-color:#ffff00;
+    --main-color:rgb(24,46,73);
     --shadow-black-100: 0 5px 15px rgba(0,0,0,0.2);
-    --black-900:#000;
+    --black-900:#302f2f;
     --black-400:#646f87;
     --black-100:#f7f7f7;
     --white:#fff;
@@ -146,8 +146,9 @@ img{
 }
 .navbar.sticky{
     padding: 12px 25px;
-    background-color: var(--white);
+    background-color: rgb(49, 94, 150);
     box-shadow:var(--shadow-black-100);
+    color: white;
 }
 .navbar .logo a{
     font-size: 24px;
@@ -164,7 +165,7 @@ img{
     margin-left: 36px;
 }
 .navbar .menu .nav-item .nav-link{
-    color: black;
+    color: white;
     font-size: 19px;
     font-weight: 600;
     display: block;
@@ -182,7 +183,7 @@ img{
 .navbar .nav-item .nav-link span{
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: white;
     position: absolute;
     left: 0;
     bottom:0;
@@ -196,7 +197,7 @@ img{
     content: '';
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: red;
     left: 110%;
 }
 .navbar .nav-item .nav-link span::after{
@@ -204,7 +205,7 @@ img{
     content: '';
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: green;
     left: 140%;
 }
 .navbar .nav-item > .nav-link.active span, .navbar .nav-item:hover > .nav-link span{
@@ -251,13 +252,81 @@ img{
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0;
+    z-index: 999;
 }
 .home-section .home-text h4{
+    display: flex;
     font-size:30px;
     font-weight: 600;
     letter-spacing: 4px;
     color: var(--main-color);
+    z-index: 999;
 }
+
+.home-section .home-text h4 span::before{
+    content: "Developer";
+    animation: animate infite 25s;
+    padding-left: 10px;
+    font-size:27px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: black;
+    z-index: 9999;
+}
+
+@keyframes animate {
+  
+    0% {
+        content: "Developer";
+        animation: ease-in-out;
+    }
+
+    10% {
+        content: "Freelancer";
+        animation: ease-in-out;
+    }
+
+    20% {
+        content: "Front End Guy";
+        animation: ease;
+    }
+
+    30%{
+        content: "Team Worker";
+        animation: ease;
+    }
+
+    40%{
+        content: "Back End Guy";
+        animation: ease;
+    }
+
+    50%{
+        content: "Reliable Staff";
+        animation: ease;
+    }
+
+    60%{
+        content: "Team Leader";
+    }
+
+    70%{
+        content: "Full Stack Guy";
+    }
+
+    80%{
+        content: "Gamer";
+    }
+
+    90%{
+        content: "Tech Guy";
+    }
+
+    100%{
+        content: "Designer";
+    }
+}
+
 .home-section .home-text h1{
     font-size: 50px;
     font-weight: 700;
@@ -316,7 +385,7 @@ img{
 }
 .about-section .about-image .img-box img{
     max-width: 100%;
-    width: 100%;
+    width: 75%;
     z-index:8 ;
 }
 .about-section .about-image .img-box .about-shape{
@@ -509,9 +578,9 @@ img{
     margin:0 0 10px;
     text-transform: capitalize;
 }
-/* .service-section .service-item-inner:hover h3{
-
-} */
+ .service-section .service-item-inner:hover h3{
+    color: white;
+}
 .service-section .service-item-inner p{
     font-size:16px;
     color: var(--black-400);
@@ -520,7 +589,7 @@ img{
     transition: all 1s ease;
 }
 .service-section .service-item-inner:hover p{
-    color: var(--black-900);
+    color:white;
 }
 
 /*=== PORTFOLIO === */
@@ -547,7 +616,7 @@ img{
 }
 .portfolio .portfolio-filter button:hover, 
 .portfolio .portfolio-filter button.active{
-    color:var(--black-900);
+    color:white;
     background-color: var(--main-color);
     border:1px solid black;
 }
